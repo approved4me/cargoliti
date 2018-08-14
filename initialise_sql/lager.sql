@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS cargoliti;
 USE cargoliti;
 
 CREATE TABLE IF NOT EXISTS `user` (
-      `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+      `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
       `vorname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
       `nachname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
       `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 CREATE TABLE IF NOT EXISTS `lager` (
       `id` int(6) unsigned ZEROFILL AUTO_INCREMENT  NOT NULL,
-      `user_id` int(5) NOT NULL,
+      `user_id` int(5) unsigned NOT NULL,
       `position` varchar(50) COLLATE utf8_unicode_ci NULL,
       `shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
       `position_shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
