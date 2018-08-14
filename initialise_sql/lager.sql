@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS cargoliti;
 USE cargoliti;
 
 CREATE TABLE IF NOT EXISTS `user` (
-      `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+      `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
       `vorname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
       `nachname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
       `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -40,6 +40,6 @@ CREATE TABLE IF NOT EXISTS `lager` (
       `hinweis` varchar(50) COLLATE utf8_unicode_ci NULL,
       `angelegt_am` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
       `aktualisiert_am` timestamp NULL DEFAULT NULL,
-      PRIMARY KEY (`id`)
+      PRIMARY KEY (`id`),
       FOREIGN KEY (`user_id`) REFERENCES  user(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
