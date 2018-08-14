@@ -2,7 +2,20 @@ DROP DATABASE IF EXISTS cargoliti;
 CREATE DATABASE IF NOT EXISTS cargoliti;
 USE cargoliti;
 
-CREATE TABLE `lager` (
+CREATE TABLE IF NOT EXISTS `user` (
+      `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+      `vorname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `nachname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `passwort` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      `updated_at` timestamp NULL DEFAULT NULL,
+      `passwortcode` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+      `passwortcode_time` timestamp NULL DEFAULT NULL,
+      PRIMARY KEY (`id`), UNIQUE (`email`)      
+      )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `lager` (
       `id` int(6) unsigned ZEROFILL AUTO_INCREMENT  NOT NULL,
       `user_id` int(5) NOT NULL,
       `position` varchar(50) COLLATE utf8_unicode_ci NULL,
@@ -28,4 +41,5 @@ CREATE TABLE `lager` (
       `angelegt_am` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
       `aktualisiert_am` timestamp NULL DEFAULT NULL,
       PRIMARY KEY (`id`)
+      FOREIGN KEY (`user_id`) REFERENCES  user(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
