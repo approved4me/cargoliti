@@ -43,3 +43,18 @@ CREATE TABLE IF NOT EXISTS `lager` (
       PRIMARY KEY (`id`),
       FOREIGN KEY (`user_id`) REFERENCES  user(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO `user`(
+    `vorname`,
+    `nachname`,
+    `email`,
+    `passwort`,
+    `created_at`
+)
+VALUES(
+    'Vorname',
+    'Nachname',
+    'Email@Mail.com',
+    'Passwort',
+    CURRENT_TIMESTAMP
+);
