@@ -19,7 +19,7 @@ body {
 
 header {
   width: 100%;
-  background: url(img/menubg.png);
+  background: url(../img/menubg.png);
   text-align: center;
   background-repeat: repeat-x;
   max-height: auto;
