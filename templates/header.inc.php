@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Rubik" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="main.js"></script>
     <title>SHOT PACKING CENTER</title>
-    
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+  </head>
 <body>
   <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
