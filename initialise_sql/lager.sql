@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `lager` (
       `beschreibung` varchar(50) COLLATE utf8_unicode_ci NULL,
       `kgs` float(5) NOT NULL,
       `cbm` float(5) NOT NULL,
-      `cbm_final` float(5) NOT NULL,
+      `cbm_final` float(5) NULL,
       `markierung` varchar(50) COLLATE utf8_unicode_ci NULL,
       `zollware` BOOLEAN NOT NULL,
       `imo_ware` BOOLEAN NOT NULL,
