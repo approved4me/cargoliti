@@ -1,1 +1,156 @@
-css 
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}img,embed,iframe,object,audio,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0;text-align:left}
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+body {
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+	font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+	max-width: 768px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background: url(img/menubg.png);
+  text-align: center;
+  background-repeat: repeat-x;
+  max-height: auto;
+  padding: 10px;
+  display: inline-block;
+  color: white;
+}
+
+section {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+
+.top h1 {
+  padding: 10px;
+  font-family: 'Arvo', serif;
+  font-size: 2.4em;
+  font-weight: 700;
+  color: #2A3365;
+}
+
+.form {
+  padding: 10px;
+}
+
+.vergessen {
+  float: right;
+  color: #326DA4;
+}
+
+input[type=text],
+[type=password],
+[type=submit] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 1.4em
+}
+
+input[type="password"] {
+  font-family: caption;
+  font-size: 2em;
+	padding: 5px 10px;
+}
+
+input[type=checkbox]+label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]+label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox]+label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked+label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=submit] {
+	background-color: #2A3365; /* Green */
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Arvo', serif;
+	font-size: 1.6em;
+	text-transform: uppercase;
+}
+
+.bottom {
+	text-align: center;
+	text-decoration: none;
+}
+
+.bottom a {
+	text-decoration: none;
+	color: #326DA4;
+}
+
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	display: flex;
+	justify-content: center;
+	padding: 0 20px;
+	text-align: center;
+	line-height: 2.5em;
+}
+
+.hamburger {
+  display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+	padding-right: 20px;
+	height: 0;
+}
+
+.hamburger button {
+	background-color: transparent;
+	border: none;
+	text-decoration: none;
+	font-size: 2em;
+}
+
+.mystyle {
+  display: none;
+}
+
+.newClassName {
+  display: block;
+}
