@@ -15,6 +15,13 @@ CREATE TABLE IF NOT EXISTS `user` (
       PRIMARY KEY (`id`), UNIQUE (`email`)      
       )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+
+CREATE TABLE IF NOT EXISTS `verpackung` (
+      `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
+ 	  `verpackung_art` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+	  PRIMARY KEY (`id`)
+      )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS `lager` (
       `id` int(6) unsigned ZEROFILL AUTO_INCREMENT  NOT NULL,
       `user_id` int(5) unsigned NOT NULL,
@@ -28,12 +35,12 @@ CREATE TABLE IF NOT EXISTS `lager` (
       `schiff` varchar(50) COLLATE utf8_unicode_ci NULL,
       `pod` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
       `anzahl` int(5) NOT NULL,
-      `verpackung_id` int(5) NOT NULL,
-      `beschreibung` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `verpackung_id` int(5) unsigned NOT NULL,
+      `beschreibung` text(1000) COLLATE utf8_unicode_ci NULL,
       `kgs` float(5) NOT NULL,
       `cbm` float(5) NOT NULL,
       `cbm_final` float(5) NULL,
-      `markierung` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `markierung` text(1000) COLLATE utf8_unicode_ci NULL,
       `zollware` BOOLEAN NOT NULL,
       `imo_ware` BOOLEAN NOT NULL,
       `un_code` varchar(50) COLLATE utf8_unicode_ci NULL,
@@ -41,7 +48,8 @@ CREATE TABLE IF NOT EXISTS `lager` (
       `angelegt_am` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
       `aktualisiert_am` timestamp NULL DEFAULT NULL,
       PRIMARY KEY (`id`),
-      FOREIGN KEY (`user_id`) REFERENCES  user(id)
+      FOREIGN KEY (`user_id`) REFERENCES  user(id),
+ 	  FOREIGN KEY (`verpackung_id`) REFERENCES  verpackung(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `user`(
@@ -57,4 +65,11 @@ VALUES(
     'Email@Mail.com',
     'Passwort',
     CURRENT_TIMESTAMP
+);
+
+INSERT INTO `verpackung`(
+    `verpackung_art`
+)
+VALUES(
+    'Holzpalette/n'
 );
