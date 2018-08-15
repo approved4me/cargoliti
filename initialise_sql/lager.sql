@@ -22,6 +22,7 @@ CREATE TABLE IF NOT EXISTS `verpackung` (
 	  PRIMARY KEY (`id`)
       )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+
 CREATE TABLE IF NOT EXISTS `lager` (
       `id` int(6) unsigned ZEROFILL AUTO_INCREMENT  NOT NULL,
       `user_id` int(5) unsigned NOT NULL,
@@ -52,6 +53,7 @@ CREATE TABLE IF NOT EXISTS `lager` (
  	  FOREIGN KEY (`verpackung_id`) REFERENCES  verpackung(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+
 INSERT INTO `user`(
     `vorname`,
     `nachname`,
@@ -67,9 +69,16 @@ VALUES(
     CURRENT_TIMESTAMP
 );
 
+
 INSERT INTO `verpackung`(
     `verpackung_art`
 )
 VALUES(
-    'Holzpalette/n'
+    'Holzpalette',
+	'Holzkiste',
+	'Pappkarton',
+	'INKA-Palette',
+	'Plastikpalette',
+	'Trommel',
+	'Fass'
 );
