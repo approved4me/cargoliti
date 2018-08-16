@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <script src="main.js"></script>
     <title>SHOT PACKING CENTER</title>
-  </head>
+</head>
 <body>
   <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
