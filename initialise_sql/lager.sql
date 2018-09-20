@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 CREATE TABLE IF NOT EXISTS `verpackung` (
       `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
- 	  `verpackung_art` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-	  PRIMARY KEY (`id`)
+ 	   `verpackung_art` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+	   PRIMARY KEY (`id`)
       )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
@@ -50,35 +50,35 @@ CREATE TABLE IF NOT EXISTS `lager` (
       `aktualisiert_am` timestamp NULL DEFAULT NULL,
       PRIMARY KEY (`id`),
       FOREIGN KEY (`user_id`) REFERENCES  user(id),
- 	  FOREIGN KEY (`verpackung_id`) REFERENCES  verpackung(id)
+ 	   FOREIGN KEY (`verpackung_id`) REFERENCES  verpackung(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 INSERT INTO `user`(
-    `vorname`,
-    `nachname`,
-    `email`,
-    `passwort`,
-    `created_at`
+     `vorname`,
+     `nachname`,
+     `email`,
+     `passwort`,
+     `created_at`
 )
 VALUES(
-    'Vorname',
-    'Nachname',
-    'Email@Mail.com',
-    'Passwort',
-    CURRENT_TIMESTAMP
+     'Vorname',
+     'Nachname',
+     'Email@Mail.com',
+     'Passwort',
+     CURRENT_TIMESTAMP
 );
 
 
 INSERT INTO `verpackung`(
-    `verpackung_art`
+     `verpackung_art`
 )
 VALUES(
-    'Holzpalette',
-	'Holzkiste',
-	'Pappkarton',
-	'INKA-Palette',
-	'Plastikpalette',
-	'Trommel',
-	'Fass'
+     'Holzpalette'),
+	  ('Holzkiste'),
+	  ('Pappkarton'),
+	  ('INKA-Palette'),
+	  ('Plastikpalette'),
+	  ('Trommel'),
+	  ('Fass'
 );
