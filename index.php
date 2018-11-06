@@ -9,6 +9,9 @@ include("templates/header.inc.php")
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
+      <?php
+       require_once("inc/lcl_erfassung.inc.php");
+		?>
         <h1>Loginscript</h1>
         <p>Herzlich Willkommen zum Loginscript von PHP-Einfach.de. Details zu diesem Script sowie eine Schritt-für-Schritt Anleitung findet ihr auf <a href="http://www.php-einfach.de/experte/php-codebeispiele/loginscript/" target="_blank">PHP-Einfach.de &raquo; Loginscript</a>.
         
