@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Rubik" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="main.js"></script>
     <title>SHOT PACKING CENTER</title>
 </head>
@@ -21,7 +21,9 @@
           </button>
           <a class="navbar-brand" href="index.php"><i class="glyphicon glyphicon-leaf logo"></i> Unternehmenslogo</a>
         </div>
-        <?php if(!is_checked_in()): ?>
+        <!-- <?php if(!is_checked_in()): ?>
+        		important php  stuff
+        -->
         <div id="navbar" class="navbar-collapse collapse">
           <form class="navbar-form navbar-right" action="login.php" method="post">
 			<table class="login" role="presentation">
