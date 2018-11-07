@@ -15,7 +15,8 @@
 		<label for="mail_agent">E-Mail Agent:</label>
 		<input type="email" name="email">
 
-		<input type="checkbox" name="t1" value="T-1">T-1<br>
+		<input type="checkbox" name="t1" id="t1" value="T-1">
+		<label for="t1">T-1</label>
 		<input type="checkbox" name="imo" value="T-1">IMO<br>
 
 		<label for="pod">Empfangshafen:</label>
@@ -37,7 +38,7 @@
 		<textarea name="description" rows="8" cols="30"></textarea>
 		<label for="kgs">KGS:</label>
 		<textarea name="kgs" rows="8" cols="4"></textarea>
-		<label for="cbm">KGS:</label>
+		<label for="cbm">CBM:</label>
 		<textarea name="cbm" rows="8" cols="4"></textarea>
 
 		<label for="internal">Interne Hinweise:</label>
