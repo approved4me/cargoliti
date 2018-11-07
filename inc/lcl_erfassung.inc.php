@@ -28,6 +28,7 @@
 		<label for="consignee">Empfänger:</label>
 		<input type="text" name="consignee">
 
+		<h2>Sendungsdaten:</h2>
 		<label for="marks">Markierung:</label>
 		<textarea name="marks" rows="8" cols="25"></textarea>
 		<label for="anzahl">Anzahl:</label>
@@ -41,6 +42,7 @@
 		<label for="cbm">CBM:</label>
 		<textarea name="cbm" rows="8" cols="4"></textarea>
 
+		<button>Neue Zeile</button>
 		<label for="internal">Interne Hinweise:</label>
 		<textarea name="internal" rows="8" cols="100"></textarea>
 
