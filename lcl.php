@@ -26,14 +26,14 @@ include("templates/header.inc.php");
 				<label for="mail_agent">E-Mail Agent:</label>
 				<input type="email" name="mail_agent">
 
-				<input type="checkbox" name="t1" id="t1" value="T-1">
+				<input type="checkbox" name="t1" id="t1" value="t1">
 				<label for="t1">T-1</label>
-				<input type="checkbox" name="imo" value="T-1">IMO
+				<input type="checkbox" name="imo" value="imo">IMO
 				<br>
 				<label for="pod">Empfangshafen:</label>
 				<input type="text" name="pod">
 				<label for="schiff">Schiff:</label>
-				<input type="text" name="schiff">
+				<input type="text" name="vessel">
 
 				<label for="shipper">Versender:</label>
 				<input type="text" name="shipper">
@@ -43,9 +43,9 @@ include("templates/header.inc.php");
 				<h2>Sendungsdaten:</h2>
 				<label for="marks">Markierung:</label>
 				<textarea name="marks" rows="8" cols="25"></textarea>
-				<label for="anzahl">Anzahl:</label>
-				<textarea name="marks" rows="8" cols="4"></textarea>
-				<label for="Verpackung">Verp.:</label>
+				<label for="amount">Anzahl:</label>
+				<textarea name="amount" rows="8" cols="4"></textarea>
+				<label for="package">Verp.:</label>
 				<textarea name="package" rows="8" cols="8"></textarea>
 				<label for="description">Beschreibung:</label>
 				<textarea name="description" rows="8" cols="30"></textarea>
