@@ -20,8 +20,9 @@ if	(isset($_POST['erfassen'])) {
 	$amount = $_POST["amount"];
 	$package_type = $_POST["package_type"];
 	$description = $_POST["description"];
-	$kgs = $_POST["kgs"];
-	$cbm = $_POST["cbm"];
+
+	$kgs = str_replace(",", ".", $_POST["kgs"]);
+	$cbm = str_replace(",", ".", $_POST["cbm"]);
 	$remarks = $_POST["remarks"];
 
 	echo "<br>";
@@ -44,6 +45,8 @@ if	(isset($_POST['erfassen'])) {
 	echo $kgs . "<br>";
 	echo $cbm . "<br>";
 	echo $remarks . "<br>";
+
+
 
 	$stmt = $pdo->prepare("INSERT INTO lager (
 	user_id,
