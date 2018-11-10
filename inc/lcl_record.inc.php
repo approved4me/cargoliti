@@ -37,10 +37,10 @@ if	(isset($_POST['erfassen'])) {
 	echo $vessel . "<br>";
 	echo $shipper . "<br>";
 	echo $consignee . "<br>";
-	echo $marks . "<br>";
+	echo nl2br($marks) . "<br>";
 	echo $amount . "<br>";
 	echo $package_type . "<br>";
-	echo $description . "<br>";
+	echo nl2br($description) . "<br>";
 	echo $kgs . "<br>";
 	echo $cbm . "<br>";
 	echo $remarks . "<br>";
