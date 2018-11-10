@@ -8,17 +8,17 @@ include("templates/header.inc.php");
 	<div>
 		<fieldset>
 			<legend>LCL Erfassung</legend>
-			<form action="inc/lcl_erfassung.inc.php" method="POST">
+			<form action="inc/lcl_record.inc.php" method="POST">
 
 				<label for="sachbearbeiter">Sachbearbeiter:</label>
 				<input type="text" name="user" value="Tobias">
 
-				<label for="ref_lager">Referenz SHOT:</label>
-				<input type="text" name="ref_lager" required>
+				<label for="reference">Referenz SHOT:</label>
+				<input type="text" name="reference" required>
 
 				<label for="pod">Empfangshafen:</label>
 				<input type="text" name="pod">
-				<label for="schiff">Schiff:</label>
+				<label for="vessel">Schiff:</label>
 				<input type="text" name="vessel">
 
 				<label for="shipper">Versender:</label>
@@ -46,8 +46,8 @@ include("templates/header.inc.php");
 				<textarea name="marks" rows="8" cols="25"></textarea>
 				<label for="amount">Anzahl:</label>
 				<textarea name="amount" rows="8" cols="4"></textarea>
-				<label for="package">Verp.:</label>
-				<textarea name="package" rows="8" cols="8"></textarea>
+				<label for="package_type">Verp.:</label>
+				<textarea name="package_type" rows="8" cols="8"></textarea>
 				<label for="description">Beschreibung:</label>
 				<textarea name="description" rows="8" cols="30"></textarea>
 				<label for="kgs">KGS:</label>
@@ -57,8 +57,8 @@ include("templates/header.inc.php");
 
 				<button>Neue Zeile</button>
 
-				<label for="internal">Interne Hinweise:</label>
-				<textarea name="internal" rows="8" cols="100"></textarea>
+				<label for="remarks">Interne Hinweise:</label>
+				<textarea name="remarks" rows="8" cols="100"></textarea>
 
 				<br />
 

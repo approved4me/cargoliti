@@ -4,10 +4,10 @@ USE cargoliti;
 
 CREATE TABLE IF NOT EXISTS `user` (
       `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
-      `vorname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-      `nachname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `firstname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `surname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
       `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-      `passwort` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+      `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
       `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
       `updated_at` timestamp NULL DEFAULT NULL,
       `passwortcode` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -16,9 +16,9 @@ CREATE TABLE IF NOT EXISTS `user` (
       )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
-CREATE TABLE IF NOT EXISTS `verpackung` (
+CREATE TABLE IF NOT EXISTS `package` (
       `id` int(5) unsigned NOT NULL AUTO_INCREMENT,
- 	   `verpackung_art` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+ 	   `package_type` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
 	   PRIMARY KEY (`id`)
       )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -26,39 +26,39 @@ CREATE TABLE IF NOT EXISTS `verpackung` (
 CREATE TABLE IF NOT EXISTS `lager` (
       `id` int(6) unsigned ZEROFILL AUTO_INCREMENT  NOT NULL,
       `user_id` int(5) unsigned NOT NULL,
-      `position` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `reference` varchar(50) COLLATE utf8_unicode_ci NULL,
       `shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
-      `position_shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `ref_shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
       `email_shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
-      `position_agent` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `ref_agent` varchar(50) COLLATE utf8_unicode_ci NULL,
       `email_agent` varchar(50) COLLATE utf8_unicode_ci NULL,
       `consignee` varchar(50) COLLATE utf8_unicode_ci NULL,
-      `schiff` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `vessel` varchar(50) COLLATE utf8_unicode_ci NULL,
       `pod` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-      `anzahl` int(5) NOT NULL,
-      `verpackung_id` int(5) unsigned NOT NULL,
-      `beschreibung` text(1000) COLLATE utf8_unicode_ci NULL,
+      `amount` int(5) NOT NULL,
+      `package_id` int(5) unsigned NOT NULL,
+      `descriptiion` text(1000) COLLATE utf8_unicode_ci NULL,
       `kgs` float(5) NOT NULL,
       `cbm` float(5) NOT NULL,
       `cbm_final` float(5) NULL,
-      `markierung` text(1000) COLLATE utf8_unicode_ci NULL,
-      `zollware` BOOLEAN NOT NULL,
-      `imo_ware` BOOLEAN NOT NULL,
+      `marks` text(1000) COLLATE utf8_unicode_ci NULL,
+      `t1` BOOLEAN NOT NULL,
+      `imo` BOOLEAN NOT NULL,
       `un_code` varchar(50) COLLATE utf8_unicode_ci NULL,
-      `hinweis` varchar(50) COLLATE utf8_unicode_ci NULL,
-      `angelegt_am` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-      `aktualisiert_am` timestamp NULL DEFAULT NULL,
+      `remarks` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `created_am` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+      `updated_at` timestamp NULL DEFAULT NULL,
       PRIMARY KEY (`id`),
       FOREIGN KEY (`user_id`) REFERENCES  user(id),
- 	   FOREIGN KEY (`verpackung_id`) REFERENCES  verpackung(id)
+ 	   FOREIGN KEY (`package_id`) REFERENCES  package(id)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
 INSERT INTO `user`(
-     `vorname`,
-     `nachname`,
+     `firstname`,
+     `surname`,
      `email`,
-     `passwort`,
+     `password`,
      `created_at`
 )
 VALUES(
@@ -70,8 +70,8 @@ VALUES(
 );
 
 
-INSERT INTO `verpackung`(
-     `verpackung_art`
+INSERT INTO `package`(
+     `package_type`
 )
 VALUES(
      'Holzpalette'),

@@ -4,7 +4,7 @@ if	(isset($_POST['erfassen'])) {
 	require("config.inc.php");
 
 	$user = $_POST["user"];
-	$ref_lager = $_POST["ref_lager"];
+	$reference = $_POST["reference"];
 	$pod = $_POST["pod"];
 	$vessel = $_POST["vessel"];
 	$shipper = $_POST["shipper"];
@@ -18,15 +18,15 @@ if	(isset($_POST['erfassen'])) {
 
 	$marks = $_POST["marks"];
 	$amount = $_POST["amount"];
-	$package = $_POST["package"];
+	$package_type = $_POST["package_type"];
 	$description = $_POST["description"];
 	$kgs = $_POST["kgs"];
 	$cbm = $_POST["cbm"];
-	$internal = $_POST["internal"];
+	$remarks = $_POST["remarks"];
 
 	echo "<br>";
 	echo $user . "<br>";
-	echo $ref_lager . "<br>";
+	echo $reference . "<br>";
 	echo $ref_kunde . "<br>";
 	echo $mail_kunde . "<br>";
 	echo $ref_agent . "<br>";
@@ -39,10 +39,10 @@ if	(isset($_POST['erfassen'])) {
 	echo $consignee . "<br>";
 	echo $marks . "<br>";
 	echo $amount . "<br>";
-	echo $package . "<br>";
+	echo $package_type . "<br>";
 	echo $description . "<br>";
 	echo $kgs . "<br>";
 	echo $cbm . "<br>";
-	echo $internal . "<br>";
+	echo $remarks . "<br>";
 }
 ?>
