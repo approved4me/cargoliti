@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `package` (
 CREATE TABLE IF NOT EXISTS `lager` (
       `id` int(6) unsigned ZEROFILL AUTO_INCREMENT  NOT NULL,
       `user_id` int(5) unsigned NOT NULL,
-      `reference` varchar(50) COLLATE utf8_unicode_ci NULL,
+      `reference` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
       `shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
       `ref_shipper` varchar(50) COLLATE utf8_unicode_ci NULL,
       `email_shipper` varchar(50) COLLATE utf8_unicode_ci NULL,

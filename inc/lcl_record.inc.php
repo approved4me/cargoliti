@@ -44,5 +44,13 @@ if	(isset($_POST['erfassen'])) {
 	echo $kgs . "<br>";
 	echo $cbm . "<br>";
 	echo $remarks . "<br>";
+
+	$stmt = $pdo->prepare("INSERT INTO test (user, reference)
+   VALUES (:user, :reference)");
+	$stmt->execute(array(
+		"user" => $user,
+		"reference" => $reference));
+   $stmt = null;
+
 }
 ?>
