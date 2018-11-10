@@ -5,16 +5,17 @@ if	(isset($_POST['erfassen'])) {
 
 	$user = $_POST["user"];
 	$ref_lager = $_POST["ref_lager"];
-	$ref_kunde = $_POST["ref_kunde"];
-	$mail_kunde =$_POST["mail_kunde"];
+	$pod = $_POST["pod"];
+	$vessel = $_POST["vessel"];
+	$shipper = $_POST["shipper"];
+	$ref_kunde = $_POST["ref_shipper"];
+	$mail_kunde =$_POST["mail_shipper"];
+	$consignee = $_POST["consignee"];
 	$ref_agent = $_POST["ref_agent"];
 	$mail_agent =$_POST["mail_agent"];
 	$check_t1 = isset($_POST['t1']) ? 1 : 0;
 	$check_imo = isset($_POST['imo']) ? 1 : 0;
-	$pod = $_POST["pod"];
-	$vessel = $_POST["vessel"];
-	$shipper = $_POST["shipper"];
-	$consignee = $_POST["consignee"];
+
 	$marks = $_POST["marks"];
 	$amount = $_POST["amount"];
 	$package = $_POST["package"];
@@ -23,10 +24,25 @@ if	(isset($_POST['erfassen'])) {
 	$cbm = $_POST["cbm"];
 	$internal = $_POST["internal"];
 
-
-	echo $user;
-	echo $check_t1;
-	echo $check_imo;
-
+	echo "<br>";
+	echo $user . "<br>";
+	echo $ref_lager . "<br>";
+	echo $ref_kunde . "<br>";
+	echo $mail_kunde . "<br>";
+	echo $ref_agent . "<br>";
+	echo $mail_agent . "<br>";
+	echo $check_t1 . "<br>";
+	echo $check_imo . "<br>";
+	echo $pod . "<br>";
+	echo $vessel . "<br>";
+	echo $shipper . "<br>";
+	echo $consignee . "<br>";
+	echo $marks . "<br>";
+	echo $amount . "<br>";
+	echo $package . "<br>";
+	echo $description . "<br>";
+	echo $kgs . "<br>";
+	echo $cbm . "<br>";
+	echo $internal . "<br>";
 }
 ?>

@@ -16,10 +16,20 @@ include("templates/header.inc.php");
 				<label for="ref_lager">Referenz SHOT:</label>
 				<input type="text" name="ref_lager" required>
 
-				<label for="ref_kunde">Referenz Kunde:</label>
-				<input type="text" name="ref_kunde">
-				<label for="mail_kunde">E-Mail Kunde:</label>
-				<input type="email" name="mail_kunde">
+				<label for="pod">Empfangshafen:</label>
+				<input type="text" name="pod">
+				<label for="schiff">Schiff:</label>
+				<input type="text" name="vessel">
+
+				<label for="shipper">Versender:</label>
+				<input type="text" name="shipper">
+				<label for="ref_shipper">Referenz Versender:</label>
+				<input type="text" name="ref_shipper">
+				<label for="mail_shipper">E-Mail Versender:</label>
+				<input type="email" name="mail_shipper">
+
+				<label for="consignee">Empfänger:</label>
+				<input type="text" name="consignee">
 
 				<label for="ref_agent">Referenz Agent:</label>
 				<input type="text" name="ref_agent">
@@ -30,15 +40,6 @@ include("templates/header.inc.php");
 				<label for="t1">T-1</label>
 				<input type="checkbox" name="imo" value="imo">IMO
 				<br>
-				<label for="pod">Empfangshafen:</label>
-				<input type="text" name="pod">
-				<label for="schiff">Schiff:</label>
-				<input type="text" name="vessel">
-
-				<label for="shipper">Versender:</label>
-				<input type="text" name="shipper">
-				<label for="consignee">Empfänger:</label>
-				<input type="text" name="consignee">
 
 				<h2>Sendungsdaten:</h2>
 				<label for="marks">Markierung:</label>
