@@ -25,16 +25,16 @@ include("templates/header.inc.php");
 				<input type="text" name="shipper">
 				<label for="ref_shipper">Referenz Versender:</label>
 				<input type="text" name="ref_shipper">
-				<label for="mail_shipper">E-Mail Versender:</label>
-				<input type="email" name="mail_shipper">
+				<label for="email_shipper">E-Mail Versender:</label>
+				<input type="email" name="email_shipper">
 
 				<label for="consignee">Empfänger:</label>
 				<input type="text" name="consignee">
 
 				<label for="ref_agent">Referenz Agent:</label>
 				<input type="text" name="ref_agent">
-				<label for="mail_agent">E-Mail Agent:</label>
-				<input type="email" name="mail_agent">
+				<label for="email_agent">E-Mail Agent:</label>
+				<input type="email" name="email_agent">
 
 				<input type="checkbox" name="t1" id="t1" value="t1">
 				<label for="t1">T-1</label>
