@@ -46,7 +46,8 @@ if	(isset($_POST['erfassen'])) {
 	echo $cbm . "<br>";
 	echo $remarks . "<br>";
 
-
+	/* ausgabe von der Zahl mit Dezimalpunkt und 3 Stellen nach dem Komma */
+	echo number_format($kgs, 3, ',', '.') .  "<br>";
 
 	$stmt = $pdo->prepare("INSERT INTO lager (
 	user_id,
