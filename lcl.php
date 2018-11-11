@@ -10,8 +10,8 @@ include("templates/header.inc.php");
 			<legend>LCL Erfassung</legend>
 			<form action="inc/lcl_record.inc.php" method="POST">
 
-				<label for="sachbearbeiter">Sachbearbeiter:</label>
-				<input type="text" name="user" value="Tobias">
+				<label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
+				<input type="text" name="user" value="1">
 
 				<label for="reference">Referenz SHOT:</label>
 				<input type="text" name="reference" required>
@@ -40,30 +40,34 @@ include("templates/header.inc.php");
 				<label for="t1">T-1</label>
 				<input type="checkbox" name="imo" value="imo">
 				<label for="imo">IMO</label>
+
 				<br>
+				<br>
+				<hr>
 				<br>
 
 				<h2>Sendungsdaten:</h2>
 				<label for="marks">Markierung:</label>
 				<textarea name="marks" rows="5"></textarea>
 				<label for="amount">Anzahl:</label>
-				<textarea name="amount" rows="1"></textarea>
-				<label for="package_type">Verpackungsart:</label>
-				<textarea name="package_type" rows="1"></textarea>
+				<input type="text" name="amount">
+				<label for="package_type">Verpackungsart (ID (1-6)):</label>
+				<input type="text" name="package_type">
 				<label for="description">Beschreibung:</label>
 				<textarea name="description" rows="5"></textarea>
 				<label for="kgs">KGS:</label>
-				<textarea name="kgs" rows="1"></textarea>
+				<input type="text" name="kgs">
 				<label for="cbm">CBM:</label>
-				<textarea name="cbm" rows="1"></textarea>
+				<input type="text" name="cbm">
 
-				<button>Neue Zeile</button>
+				<button type=button>neue Zeile</button>
 
 				<label for="remarks">Interne Hinweise:</label>
 				<textarea name="remarks" rows="5"></textarea>
 
 				<br />
-				<input type="submit" name="ref_agent" value="Erfassen">
+				<input type="submit" name="erfassen" value="Erfassen">
+
 		</fieldset>
 	</div>
 </div>

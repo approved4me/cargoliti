@@ -1,6 +1,5 @@
 <?php
 if	(isset($_POST['erfassen'])) {
-
 	require("config.inc.php");
 
 	$user = $_POST["user"];
@@ -112,6 +111,5 @@ if	(isset($_POST['erfassen'])) {
 		"remarks" => $remarks
 		));
    $stmt = null;
-
 }
 ?>
