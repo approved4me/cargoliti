@@ -11,7 +11,7 @@ include("templates/header.inc.php");
 			<form action="inc/lcl_record.inc.php" method="POST">
 
 				<label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
-				<input type="text" name="user" value="1">
+				<input type="text" name="user" value="1" readonly>
 
 				<label for="reference">Referenz SHOT:</label>
 				<input type="text" name="reference" required>
@@ -51,7 +51,7 @@ include("templates/header.inc.php");
 				<textarea name="marks" rows="5"></textarea>
 				<label for="amount">Anzahl:</label>
 				<input type="text" name="amount">
-				<label for="package_type">Verpackungsart (ID (1-6)):</label>
+				<label for="package_type">Verpackungsart ID (1-6):</label>
 				<input type="text" name="package_type">
 				<label for="description">Beschreibung:</label>
 				<textarea name="description" rows="5"></textarea>
