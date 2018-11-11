@@ -15,12 +15,12 @@ if	(isset($_POST['erfassen'])) {
 	$email_agent =$_POST["email_agent"];
 	$check_t1 = isset($_POST['t1']) ? 1 : 0;
 	$check_imo = isset($_POST['imo']) ? 1 : 0;
-
 	$marks = $_POST["marks"];
 	$amount = $_POST["amount"];
 	$package_type = $_POST["package_type"];
 	$description = $_POST["description"];
-
+	// $kgs = number_format($_POST["kgs"], 3, '.', ''); -- geht nicht
+	// komma in punkt umwandeln zum Speichern von Nachkommastellen
 	$kgs = str_replace(",", ".", $_POST["kgs"]);
 	$cbm = str_replace(",", ".", $_POST["cbm"]);
 	$remarks = $_POST["remarks"];
@@ -45,8 +45,7 @@ if	(isset($_POST['erfassen'])) {
 	echo $kgs . "<br>";
 	echo $cbm . "<br>";
 	echo $remarks . "<br>";
-
-	/* ausgabe von der Zahl mit Dezimalpunkt und 3 Stellen nach dem Komma */
+	/* Ausgabe der Zahl mit Dezimalpunkt und 3 Stellen nach dem Komma */
 	echo number_format($kgs, 3, ',', '.') .  "<br>";
 
 	$stmt = $pdo->prepare("INSERT INTO lager (
