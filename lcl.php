@@ -38,31 +38,32 @@ include("templates/header.inc.php");
 
 				<input type="checkbox" name="t1" id="t1" value="t1">
 				<label for="t1">T-1</label>
-				<input type="checkbox" name="imo" value="imo">IMO
+				<input type="checkbox" name="imo" value="imo">
+				<label for="imo">IMO</label>
+				<br>
 				<br>
 
 				<h2>Sendungsdaten:</h2>
 				<label for="marks">Markierung:</label>
-				<textarea name="marks" rows="8" cols="25"></textarea>
+				<textarea name="marks" rows="5"></textarea>
 				<label for="amount">Anzahl:</label>
-				<textarea name="amount" rows="8" cols="4"></textarea>
-				<label for="package_type">Verp.:</label>
-				<textarea name="package_type" rows="8" cols="8"></textarea>
+				<textarea name="amount" rows="1"></textarea>
+				<label for="package_type">Verpackungsart:</label>
+				<textarea name="package_type" rows="1"></textarea>
 				<label for="description">Beschreibung:</label>
-				<textarea name="description" rows="8" cols="30"></textarea>
+				<textarea name="description" rows="5"></textarea>
 				<label for="kgs">KGS:</label>
-				<textarea name="kgs" rows="8" cols="4"></textarea>
+				<textarea name="kgs" rows="1"></textarea>
 				<label for="cbm">CBM:</label>
-				<textarea name="cbm" rows="8" cols="4"></textarea>
+				<textarea name="cbm" rows="1"></textarea>
 
 				<button>Neue Zeile</button>
 
 				<label for="remarks">Interne Hinweise:</label>
-				<textarea name="remarks" rows="8" cols="100"></textarea>
+				<textarea name="remarks" rows="5"></textarea>
 
 				<br />
-
-				<button type="submit" name="erfassen">Erfassen</button>
+				<input type="submit" name="ref_agent" value="Erfassen">
 		</fieldset>
 	</div>
 </div>
