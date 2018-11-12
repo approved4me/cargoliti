@@ -13,8 +13,8 @@ include("templates/header.inc.php");
 				<label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
 				<input type="text" name="user" value="1" readonly>
 
-				<label for="reference">Referenz SHOT:</label>
-				<input type="text" name="reference" required>
+				<label for="lcl_reference">Referenz SHOT:</label>
+				<input type="text" name="lcl_reference" required>
 
 				<label for="pod">Empfangshafen:</label>
 				<input type="text" name="pod">

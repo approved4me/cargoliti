@@ -3,7 +3,7 @@ if	(isset($_POST['erfassen'])) {
 	require("config.inc.php");
 
 	$user = $_POST["user"];
-	$reference = $_POST["reference"];
+	$lcl_reference = $_POST["lcl_reference"];
 	$pod = $_POST["pod"];
 	$vessel = $_POST["vessel"];
 	$shipper = $_POST["shipper"];
@@ -26,7 +26,7 @@ if	(isset($_POST['erfassen'])) {
 
 	echo "<br>";
 	echo $user . "<br>";
-	echo $reference . "<br>";
+	echo $lcl_reference . "<br>";
 	echo $ref_shipper . "<br>";
 	echo $email_shipper . "<br>";
 	echo $ref_agent . "<br>";
@@ -49,7 +49,7 @@ if	(isset($_POST['erfassen'])) {
 
 	$stmt = $pdo->prepare("INSERT INTO lager (
 	user_id,
-	reference,
+	lcl_reference,
 	shipper,
 	ref_shipper,
 	email_shipper,
@@ -70,7 +70,7 @@ if	(isset($_POST['erfassen'])) {
 
    VALUES (
 	:user_id,
-	:reference,
+	:lcl_reference,
 	:shipper,
 	:ref_shipper,
 	:email_shipper,
@@ -91,7 +91,7 @@ if	(isset($_POST['erfassen'])) {
 
 	$stmt->execute(array(
 		"user_id" => $user,
-		"reference" => $reference,
+		"lcl_reference" => $lcl_reference,
 		"shipper" => $shipper,
 		"ref_shipper" => $ref_shipper,
 		"email_shipper" => $email_shipper,
