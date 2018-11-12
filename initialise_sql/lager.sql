@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `lager` (
 	`marks` text(1000) COLLATE utf8_unicode_ci NULL,
 	`t1` BOOLEAN NOT NULL,
 	`imo` BOOLEAN NOT NULL,
-	`remarks` varchar(50) COLLATE utf8_unicode_ci NULL,
+	`remarks` varchar(255) COLLATE utf8_unicode_ci NULL,
 	`created_am` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	`updated_at` timestamp NULL DEFAULT NULL,
 	PRIMARY KEY (`id`),
