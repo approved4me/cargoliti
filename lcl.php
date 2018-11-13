@@ -93,7 +93,9 @@ include("templates/header.inc.php");
 				<input type="text" name="cbm">
 			</div>
 
-			<button type=button>neue Zeile</button>
+			<div class="flex-form">
+				<button type=button>neue Zeile</button>
+			</div>
 
 			<div class="flex-form">
 				<label for="remarks">Interne Hinweise:</label>
