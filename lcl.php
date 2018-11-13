@@ -9,63 +9,101 @@ include("templates/header.inc.php");
 		<legend>LCL Erfassung</legend>
 		<form action="inc/lcl_record.inc.php" method="POST">
 
-			<label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
-			<input type="text" name="user" value="1" readonly>
+			<div class="flex-form">
+				<label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
+				<input type="text" name="user" value="1" readonly>
+			</div>
 
-			<label for="lcl_reference">Referenz SHOT:</label>
-			<input type="text" name="lcl_reference" value="LCL Referenz" required>
+			<div class="flex-form">
+				<label for="lcl_reference">Referenz SHOT:</label>
+				<input type="text" name="lcl_reference" placeholder="LCL Referenz" required>
+			</div>
 
-			<label for="pod">Empfangshafen:</label>
-			<input type="text" name="pod">
-			<label for="vessel">Schiff:</label>
-			<input type="text" name="vessel">
+			<div class="flex-form">
+				<label for="pod">Empfangshafen:</label>
+				<input type="text" name="pod">
+			</div>
+			<div class="flex-form">
+				<label for="vessel">Schiff:</label>
+				<input type="text" name="vessel">
+			</div>
 
-			<label for="shipper">Versender:</label>
-			<input type="text" name="shipper">
-			<label for="ref_shipper">Referenz Versender:</label>
-			<input type="text" name="ref_shipper">
-			<label for="email_shipper">E-Mail Versender:</label>
-			<input type="email" name="email_shipper">
+			<div class="flex-form">
+				<label for="shipper">Versender:</label>
+				<input type="text" name="shipper">
+			</div>
+			<div class="flex-form">
+				<label for="ref_shipper">Referenz Versender:</label>
+				<input type="text" name="ref_shipper">
+			</div>
+			<div class="flex-form">
+				<label for="email_shipper">E-Mail Versender:</label>
+				<input type="email" name="email_shipper">
+			</div>
 
-			<label for="consignee">Empfänger:</label>
-			<input type="text" name="consignee">
+			<div class="flex-form">
+				<label for="consignee">Empfänger:</label>
+				<input type="text" name="consignee">
+			</div>
 
-			<label for="ref_agent">Referenz Agent:</label>
-			<input type="text" name="ref_agent">
-			<label for="email_agent">E-Mail Agent:</label>
-			<input type="email" name="email_agent">
+			<div class="flex-form">
+				<label for="ref_agent">Referenz Agent:</label>
+				<input type="text" name="ref_agent">
+			</div>
+			<div class="flex-form">
+				<label for="email_agent">E-Mail Agent:</label>
+				<input type="email" name="email_agent">
+			</div>
 
-			<input type="checkbox" name="t1" id="t1" value="t1">
-			<label for="t1">T-1</label>
-			<input type="checkbox" name="imo" value="imo">
-			<label for="imo">IMO</label>
+			<div class="flex-form">
+				<input type="checkbox" name="t1" id="t1" value="t1">
+				<label for="t1">T-1</label>
+				<input type="checkbox" name="imo" value="imo">
+				<label for="imo">IMO</label>
+			</div>
 
-			<br>
+
 			<br>
 			<hr>
 			<br>
 
 			<h2>Sendungsdaten:</h2>
-			<label for="marks">Markierung:</label>
-			<textarea name="marks" rows="5"></textarea>
-			<label for="amount">Anzahl:</label>
-			<input type="text" name="amount">
-			<label for="package_type">Verpackungsart ID (1-6):</label>
-			<input type="text" name="package_type">
-			<label for="description">Beschreibung:</label>
-			<textarea name="description" rows="5"></textarea>
-			<label for="kgs">KGS:</label>
-			<input type="text" name="kgs">
-			<label for="cbm">CBM:</label>
-			<input type="text" name="cbm">
+			<div class="flex-form">
+				<label for="marks">Markierung:</label>
+				<textarea name="marks" rows="5"></textarea>
+			</div>
+			<div class="flex-form">
+				<label for="amount">Anzahl:</label>
+				<input type="text" name="amount">
+			</div>
+			<div class="flex-form">
+				<label for="package_type">Verpackungsart ID (1-6):</label>
+				<input type="text" name="package_type">
+			</div>
+			<div class="flex-form">
+				<label for="description">Beschreibung:</label>
+				<textarea name="description" rows="5"></textarea>
+			</div>
+			<div class="flex-form">
+				<label for="kgs">KGS:</label>
+				<input type="text" name="kgs">
+			</div>
+			<div class="flex-form">
+				<label for="cbm">CBM:</label>
+				<input type="text" name="cbm">
+			</div>
 
 			<button type=button>neue Zeile</button>
 
-			<label for="remarks">Interne Hinweise:</label>
-			<textarea name="remarks" rows="5"></textarea>
+			<div class="flex-form">
+				<label for="remarks">Interne Hinweise:</label>
+				<textarea name="remarks" rows="5"></textarea>
+			</div>
 
 			<br />
-			<input type="submit" name="erfassen" value="Erfassen">
+			<div class="flex-form">
+				<input type="submit" name="erfassen" value="Erfassen">
+			</div>
 		</form>
 	</fieldset>
 </div>

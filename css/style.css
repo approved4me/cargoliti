@@ -26,15 +26,14 @@ fieldset {
    background-color: #f1f1f1;
 }
 
-form {
+form.flex-form {
   display: flex;
   flex-wrap: wrap;
 
 }
 
 label {
-	width: 13em;
-	padding-right: 20px;
+	padding: 6px 10px;
    text-decoration: none;
    font-size: 0.8em;
 
@@ -65,17 +64,12 @@ fieldset {
 input[type=checkbox],
 input[type=radio] {
    transform: scale(1.2);
-   height: 25px;
    vertical-align: middle;
 }
 
 input:invalid {
    border: none;
    box-shadow: 0 0 5px 1px #4CAF50;
-}
-
-input:first-child {
-   margin-top: 5px;
 }
 
 input[type=submit] {
