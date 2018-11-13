@@ -22,24 +22,30 @@ h2 {
 	text-decoration: underline;
 }
 
+/********************
+		form
+********************/
+
 fieldset {
    background-color: #f1f1f1;
 }
 
-form.flex-form {
+.flex-form {
   display: flex;
-  flex-wrap: wrap;
-
+  flex-direction: row;
 }
 
-label {
-	padding: 6px 10px;
-   text-decoration: none;
-   font-size: 0.8em;
-
+.flex-form label {
+  padding: 6px 10px;
+  text-decoration: none;
+  font-size: 0.8em;
+  flex-basis: 15rem;
+  text-align: right;
+  align-self: flex-end;
+	 margin-bottom: 4px;
 }
 
-legend {
+.flex-form legend {
    background-color: #fff;
    border: 1px solid #000;
    padding: 2px 10px;
@@ -54,11 +60,9 @@ textarea,
 fieldset {
    width: 100%;
    border: 1px solid #333;
-   margin: 0;
    padding: 6px 10px;
    box-sizing: border-box;
-	display: inline-block;
-	margin: 5px;
+	margin: 4px;
 }
 
 input[type=checkbox],
@@ -76,7 +80,6 @@ input[type=submit] {
    background-color: 4CAF50;
    color: white;
    padding: 14px 20px;
-   margin: 8px 0;
    border: none;
    border-radius: 4px;
    cursor: pointer;
@@ -95,5 +98,6 @@ button {
 	width: 200px;
 	display: block;
 	border: none;
-	margin: 10px auto;
+	margin: 0 auto;
+
 }

@@ -15,7 +15,7 @@ include("templates/header.inc.php");
 			</div>
 
 			<div class="flex-form">
-				<label for="lcl_reference">Referenz SHOT:</label>
+				<label for="lcl_reference">LCL-Referenz:</label>
 				<input type="text" name="lcl_reference" placeholder="LCL Referenz" required>
 			</div>
 
