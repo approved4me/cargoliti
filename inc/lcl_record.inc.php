@@ -47,7 +47,7 @@ if	(isset($_POST['erfassen'])) {
 	/* Ausgabe der Zahl mit Dezimalpunkt und 3 Stellen nach dem Komma */
 	echo number_format($kgs, 3, ',', '.') .  "<br>";
 
-	$stmt = $pdo->prepare("INSERT INTO lager (
+	$stmt = $pdo->prepare("INSERT INTO lcl (
 	user_id,
 	lcl_reference,
 	shipper,

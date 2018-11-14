@@ -33,9 +33,10 @@ form.flex-form {
 }
 
 label {
-	padding: 6px 10px;
+	padding: 6px 5px;
    text-decoration: none;
    font-size: 0.8em;
+	flex: 1 0 120px;
 
 }
 
@@ -54,17 +55,17 @@ textarea,
 fieldset {
    width: 100%;
    border: 1px solid #333;
-   margin: 0;
    padding: 6px 10px;
    box-sizing: border-box;
-	display: inline-block;
 	margin: 5px;
+	flex: 1 0 220px;
 }
 
 input[type=checkbox],
 input[type=radio] {
    transform: scale(1.2);
    vertical-align: middle;
+	margin-left: 5px;
 }
 
 input:invalid {

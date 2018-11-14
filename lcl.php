@@ -7,7 +7,7 @@ include("templates/header.inc.php");
 <div class="container">
 	<fieldset>
 		<legend>LCL Erfassung</legend>
-		<form action="inc/lcl_record.inc.php" method="POST">
+		<form action="inc/lcl_record.inc.php" method="POST" accept-charset="UTF-8">
 
 			<div class="flex-form">
 				<label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
@@ -92,8 +92,9 @@ include("templates/header.inc.php");
 				<label for="cbm">CBM:</label>
 				<input type="text" name="cbm">
 			</div>
-
+			<!-- evtl trigger event für neue Sendungszeile
 			<button type=button>neue Zeile</button>
+			-->
 
 			<div class="flex-form">
 				<label for="remarks">Interne Hinweise:</label>
