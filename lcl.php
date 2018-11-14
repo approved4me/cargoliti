@@ -15,7 +15,7 @@ include("templates/header.inc.php");
 			</div>
 
 			<div class="flex-form">
-				<label for="lcl_reference">Referenz SHOT:</label>
+				<label for="lcl_reference">LCL-Referenz:</label>
 				<input type="text" name="lcl_reference" placeholder="LCL Referenz" required>
 			</div>
 
@@ -92,9 +92,16 @@ include("templates/header.inc.php");
 				<label for="cbm">CBM:</label>
 				<input type="text" name="cbm">
 			</div>
+<<<<<<< HEAD
 			<!-- evtl trigger event für neue Sendungszeile
 			<button type=button>neue Zeile</button>
 			-->
+=======
+
+			<div class="flex-form">
+				<button type=button>neue Zeile</button>
+			</div>
+>>>>>>> origin/master
 
 			<div class="flex-form">
 				<label for="remarks">Interne Hinweise:</label>
