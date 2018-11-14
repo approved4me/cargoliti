@@ -11,31 +11,31 @@ include("templates/header.inc.php");
       <ul class="flex-outer">
         <li>
           <label for="sachbearbeiter">Sachbearbeiter (User Id):</label>
-				  <input type="text" name="user" value="1" readonly>
+			  <input type="text" name="user" value="1" readonly>
         </li>
         <li>
           <label for="lcl_reference">LCL-Referenz:</label>
-				  <input type="text" name="lcl_reference" placeholder="LCL-Referenz" required>
+			  <input type="text" name="lcl_reference" placeholder="LCL-Referenz" required>
         </li>
         <li>
           <label for="pod">Empfangshafen:</label>
-				  <input type="text" name="pod">
+			  <input type="text" name="pod">
         </li>
         <li>
           <label for="vessel">Schiff:</label>
-				  <input type="text" name="vessel">
+			  <input type="text" name="vessel">
         </li>
         <li>
           <label for="shipper">Versender:</label>
-				  <input type="text" name="shipper">
+			  <input type="text" name="shipper">
         </li>
         <li>
           <label for="ref_shipper">Referenz Versender:</label>
-				  <input type="text" name="ref_shipper">
+			  <input type="text" name="ref_shipper">
         </li>
         <li>
           <label for="email_shipper">E-Mail Versender:</label>
-				  <input type="email" name="email_shipper">
+			  <input type="email" name="email_shipper">
         </li>
         <li>
           <label for="consignee">Empfänger:</label>
@@ -43,7 +43,7 @@ include("templates/header.inc.php");
         </li>
         <li>
           <label for="ref_agent">Referenz Agent:</label>
-				  <input type="text" name="ref_agent">
+			  <input type="text" name="ref_agent">
         </li>
         <li>
           <label for="email_agent">E-Mail Agent:</label>

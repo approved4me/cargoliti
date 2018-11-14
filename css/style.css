@@ -5,6 +5,7 @@ body {
    font: 1em sans-serif;
 	padding: 20px;
    margin: 0;
+	background-image: url(../img/back.jpg);
 }
 
 .container {
