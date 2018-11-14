@@ -3,118 +3,61 @@
 
 body {
    font: 1em sans-serif;
-   padding: 20px;
+	padding: 20px;
    margin: 0;
 }
 
 .container {
-	max-width: 600px;
+	max-width: 768px;
 	margin: 0 auto;
 }
 
-h1 {
-	font-size: 5em;
-	text-align: center;
-}
-
-h2 {
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-/********************
-		form
-********************/
-
 fieldset {
-   background-color: #f1f1f1;
-}
-
-.flex-form {
-  display: flex;
-  flex-direction: row;
-	justify-content: center;
-}
-
-<<<<<<< HEAD
-label {
-	padding: 6px 5px;
-   text-decoration: none;
-   font-size: 0.8em;
-	flex: 1 0 120px;
-
-=======
-.flex-form label {
-  padding: 6px 10px;
-  text-decoration: none;
-  font-size: 0.8em;
-  flex-basis: 18em;
-  text-align: right;
-  align-self: flex-end;
-	 margin-bottom: 4px;
->>>>>>> origin/master
-}
-
-.flex-form legend {
-   background-color: #fff;
-   border: 1px solid #000;
-   padding: 2px 10px;
-   font-size: 0.7em;
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-textarea,
-fieldset {
-   width: 100%;
-   border: 1px solid #333;
-   padding: 6px 10px;
-<<<<<<< HEAD
-   box-sizing: border-box;
-	margin: 5px;
-	flex: 1 0 220px;
-=======
-	margin: 4px;
->>>>>>> origin/master
-}
-
-input[type=checkbox],
-input[type=radio] {
-   transform: scale(1.2);
-   vertical-align: middle;
-	margin-left: 5px;
-}
-
-input:invalid {
-   border: none;
-   box-shadow: 0 0 5px 1px #4CAF50;
-}
-
-input[type=submit] {
-   background-color: 4CAF50;
-   color: white;
-   padding: 14px 20px;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
-   text-transform: uppercase;
-   width: 100%;
-}
-
-input[type=submit]:hover {
-   background-color: #45a049;
-}
-
-button {
-	background-color: #ccc;
-	color: #fff;
 	padding: 10px;
-	width: 90%;
-	display: block;
-	border: none;
-	margin: 4px;
-	margin-left: 12.6em;
+	background-color: #ccc;
+}
 
+legend {
+	background-color: #fff;
+	padding: 4px 10px;
+	border: 1px solid #000;
+}
+
+/*****************
+      FORM
+*****************/
+
+.flex-outer li,
+.flex-inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+	flex: 1 0 150px;
+	max-width: 160px;
+	font-size: 0.8em;
+}
+
+.flex-outer > li > label + *,
+.flex-inner {
+	flex: 1 0 220px;
+	margin-bottom: 10px;
+}
+
+.flex-outer li input[type="submit"] {
+	margin-left: auto;
+	padding: 8px 16px;
+	border: none;
+	background: #333;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: .09em;
+	border-radius: 2px;
+}
+
+.flex-inner li {
+	width: 80px;
 }
