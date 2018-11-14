@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `lcl` (
 	FOREIGN KEY (`user_id`) REFERENCES  user(id),
 	FOREIGN KEY (`package_id`) REFERENCES  package(id)
 	)
-	ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+	ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_c;
 
 
 INSERT INTO `user`(
