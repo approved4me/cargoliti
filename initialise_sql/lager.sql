@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 	`id` int(5) unsigned NOT NULL AUTO_INCREMENT,
 	`firstname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
 	`surname` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-	`email` varchar(191) COLLATE utf8_unicode_ci NOT NULL,
+	`email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
 	`password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
 	`created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	`updated_at` timestamp NULL DEFAULT NULL,
