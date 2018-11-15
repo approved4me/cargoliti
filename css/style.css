@@ -5,9 +5,11 @@ body {
 	font: 1em sans-serif;
 	padding: 20px;
 	margin: 0;
+/*
 	background-image: url(../img/back.jpg);
 	background-repeat: no-repeat;
 	background-size:cover;
+*/
 }
 
 .container {
@@ -17,7 +19,7 @@ body {
 
 fieldset {
 	padding: 10px;
-	background-color: rgba(100, 100, 100, 0.6);
+	background-color: rgba(100, 100, 100, 0.3);
 }
 
 legend {
@@ -62,5 +64,12 @@ legend {
 }
 
 .flex-inner li {
-	width: 80px;
+	min-width: 100px;
+	font-size: 0.8em;
+}
+
+.flex-inner li input[type='checkbox'] {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
 }

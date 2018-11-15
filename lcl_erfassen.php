@@ -51,6 +51,7 @@ include("templates/header.inc.php");
        </li>
         <li>
           <ul class="flex-inner">
+           <p></p>
             <li>
               <input type="checkbox" name="t1" id="t1" value="t1">
               <label for="t1">T-1</label>
@@ -63,6 +64,7 @@ include("templates/header.inc.php");
         </li>
       </ul>
 			<hr>
+			<br>
 
 			<h3>Sendungsdaten:</h3>
       <ul class="flex-outer">
