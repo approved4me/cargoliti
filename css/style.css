@@ -5,11 +5,9 @@ body {
 	font: 1em sans-serif;
 	padding: 20px;
 	margin: 0;
-/*
-	background-image: url(../img/back.jpg);
+	/* background-image: url(../img/back.jpg);
 	background-repeat: no-repeat;
-	background-size:cover;
-*/
+	background-size:cover; */
 }
 
 .container {
@@ -19,7 +17,7 @@ body {
 
 fieldset {
 	padding: 10px;
-	background-color: rgba(100, 100, 100, 0.3);
+	background-color: rgba(100, 100, 100, 0.4);
 }
 
 legend {
@@ -64,12 +62,15 @@ legend {
 }
 
 .flex-inner li {
-	min-width: 100px;
+	width: 60px;
+}
+
+.flex-inner li label {
+	padding-left: 5px;
 	font-size: 0.8em;
 }
 
-.flex-inner li input[type='checkbox'] {
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
+.flex-inner li input[type="checkbox"] {
+	margin-left: 3px;
+	transform: scale(1.5);
 }

@@ -50,8 +50,8 @@ include("templates/header.inc.php");
           <input type="email" name="email_agent">
        </li>
         <li>
+         <p></p>
           <ul class="flex-inner">
-           <p></p>
             <li>
               <input type="checkbox" name="t1" id="t1" value="t1">
               <label for="t1">T-1</label>
