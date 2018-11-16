@@ -66,7 +66,7 @@ include("templates/header.inc.php");
 			<hr>
 			<br>
 
-			<h3>Sendungsdaten:</h3>
+			<h2>Sendungsdaten</h2>
       <ul class="flex-outer">
         <li>
           <label for="marks">Markierung:</label>
