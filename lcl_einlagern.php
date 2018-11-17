@@ -19,34 +19,29 @@ include("templates/header.inc.php");
 			</li>
 		  </ul>
 		</form>
+
+		<?php
+			$error_msg = "";
+			if(isset($_POST['lcl_reference'])) {
+			$lcl_reference = $_POST['lcl_reference'];
+
+//			$statement = $pdo->prepare("SELECT * FROM lcl WHERE `lcl_reference` LIKE :lcl_reference");
+			$statement = $pdo->prepare("SELECT * FROM `lcl` JOIN `package` ON lcl.package_id = package.id WHERE `lcl_reference` LIKE  :lcl_reference");
+			$result = $statement->execute(array('lcl_reference' => "$lcl_reference%"));
+		?>
 		<table class="table">
 			<tr>
 				<th>#</th>
 				<th>Referenz</th>
 				<th>Hafenplatz</th>
 				<th>Anzahl</th>
-				<th>Packstückart</th>
+				<th>Verpackung</th>
 				<th>Markierung</th>
 				<th>KGS</th>
 				<th>CBM</th>
 				<th>Interne Hinweise</th>
 			</tr>
-
 		<?php
-
-//			$statement = $pdo->prepare("SELECT * FROM package, lcl WHERE users.kunde_id = kunden.id and vorname = '$account' ORDER BY users.id");
-//			$result = $statement->execute();
-//
-//
-//
-
-			$error_msg = "";
-			if(isset($_POST['lcl_reference'])) {
-			$lcl_reference = $_POST['lcl_reference'];
-
-			$statement = $pdo->prepare("SELECT * FROM lcl WHERE `lcl_reference` LIKE :lcl_reference");
-			$result = $statement->execute(array('lcl_reference' => "%$lcl_reference%"));
-
 			$i = 1;
 			while($row = $statement->fetch()) {
 				echo "<tr>";
@@ -54,7 +49,7 @@ include("templates/header.inc.php");
 				echo "<td>".$row['lcl_reference']."</td>";
 				echo "<td>".$row['pod']."</td>";
 				echo ("<td>".$row['amount']."</td>");
-				echo ("<td>".$row['package_id']."</td>");
+				echo ("<td>".$row['package_type']."</td>");
 				echo nl2br("<td>".$row['marks']."</td>");
 				echo ("<td>".$row['kgs']."</td>");
 				echo ("<td>".$row['cbm']."</td>");

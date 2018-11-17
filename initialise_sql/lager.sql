@@ -77,6 +77,7 @@ INSERT INTO `package`(
 )
 
 VALUES
+	('Europalette'),
 	('Holzpalette'),
 	('Holzkiste'),
 	('Pappkarton'),
