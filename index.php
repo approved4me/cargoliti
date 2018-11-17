@@ -12,7 +12,7 @@ include("templates/header.inc.php");
 		<a href="lcl_erfassen.php">LCL Erfassen</a>
 	</p>
 	<p>
-		<a href="lcl_einlagern.php">LCL Einlagern</a>
+		<a href="lcl_einlagern.php">LCL Suchen / Einlagern</a>
 	</p>
 </div>
   
