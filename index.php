@@ -8,6 +8,12 @@ include("templates/header.inc.php");
   
  <div class="container">
 	<h1>Willkommen</h1>
+	<p>
+		<a href="lcl_erfassen.php">LCL Erfassen</a>
+	</p>
+	<p>
+		<a href="lcl_einlagern.php">LCL Einlagern</a>
+	</p>
 </div>
   
 <?php 

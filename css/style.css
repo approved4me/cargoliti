@@ -3,7 +3,7 @@
 
 body {
 	font: 1em sans-serif;
-	padding: 20px;
+	padding: 20px;S
 	margin: 0;
 }
 
@@ -51,6 +51,11 @@ legend {
 	margin-bottom: 10px;
 }
 
+.flex-outer li label span {
+	color: red;
+	font-weight: 900;
+	font-size: 1.2em;
+}
 .flex-outer li input[type="submit"] {
 	margin-left: auto;
 	padding: 8px 16px;

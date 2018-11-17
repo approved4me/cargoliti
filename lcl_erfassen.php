@@ -14,11 +14,11 @@ include("templates/header.inc.php");
 			  <input type="text" name="user" value="1" readonly>
         </li>
         <li>
-          <label for="lcl_reference">LCL-Referenz:</label>
+          <label for="lcl_reference">LCL-Referenz<span>*</span>:</label>
 			  <input type="text" name="lcl_reference" placeholder="LCL-Referenz" required>
         </li>
         <li>
-          <label for="pod">Empfangshafen:</label>
+          <label for="pod">Empfangshafen<span>*</span>:</label>
 			  <input type="text" name="pod">
         </li>
         <li>
@@ -73,11 +73,11 @@ include("templates/header.inc.php");
           <textarea name="marks" rows="5"></textarea>
         </li>
         <li>
-          <label for="amount">Anzahl:</label>
+          <label for="amount">Anzahl<span>*</span>:</label>
           <input type="text" name="amount">
         </li>
         <li>
-          <label for="package_type">Verpackungsart ID (1-6):</label>
+          <label for="package_type">Verpackungsart ID (1-6)<span>*</span>:</label>
           <input type="text" name="package_type">
         </li>
         <li>
@@ -85,11 +85,11 @@ include("templates/header.inc.php");
           <textarea name="description" rows="5"></textarea>
         </li>
         <li>
-          <label for="kgs">KGS:</label>
+          <label for="kgs">KGS<span>*</span>:</label>
           <input type="text" name="kgs">
         </li>
         <li>
-          <label for="cbm">CBM:</label>
+          <label for="cbm">CBM<span>*</span>:</label>
           <input type="text" name="cbm">
         </li>
         <li>
