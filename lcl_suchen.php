@@ -12,10 +12,8 @@ include("templates/header.inc.php");
 		  <ul class="flex-outer">
 			<li>
 			  <label for="lcl_reference">LCL-Referenz:</label>
-				  <input type="search" name="lcl_reference" placeholder="LCL-Referenz" required>
-			</li>
-			<li>
-			  <input type="submit" name="suchen" value="Suchen">
+				  <input id="search" type="search" name="lcl_reference" placeholder="LCL-Referenz" required>
+				  <input type="submit" name="suchen" value="Suchen">
 			</li>
 		  </ul>
 		</form>
@@ -38,7 +36,7 @@ include("templates/header.inc.php");
 				<th>Markierung</th>
 				<th>KGS</th>
 				<th>CBM</th>
-				<th>Interne Hinweise</th>
+				<th>Intern</th>
 			</tr>
 		<?php
 			$i = 1;

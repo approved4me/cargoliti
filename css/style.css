@@ -31,6 +31,7 @@ th {
 	font-weight: 300
 }
 
+
 /*****************
       FORM
 *****************/
@@ -97,4 +98,10 @@ legend {
 .flex-inner li input[type="checkbox"] {
 	margin-left: 3px;
 	transform: scale(1.5);
+}
+
+#search {
+	margin:0;
+	padding: 6px;
+	margin-right: 4px;
 }
