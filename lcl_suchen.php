@@ -36,6 +36,7 @@ include("templates/header.inc.php");
 				<th>Markierung</th>
 				<th>KGS</th>
 				<th>CBM</th>
+				<th>Shipper</th>
 				<th>Intern</th>
 			</tr>
 		<?php
@@ -50,6 +51,7 @@ include("templates/header.inc.php");
 				echo nl2br("<td>".$row['marks']."</td>");
 				echo ("<td>".$row['kgs']."</td>");
 				echo ("<td>".$row['cbm']."</td>");
+				echo ("<td>".$row['shipper']."</td>");
 				echo nl2br("<td>".$row['remarks']."</td>");
 				echo "</tr>";
 			}
