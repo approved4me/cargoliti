@@ -7,7 +7,7 @@
 <body>
 
 	<div id="qwe">test</div>
-
+	<?php echo time() * 1000 ?>
 <script>
     var now = new Date(<?php echo time() * 1000 ?>);
     function startInterval(){
